@@ -1,0 +1,114 @@
+// Intro text (in blue top center)
+type       = text_change
+offset     = 0x2E66C
+max_length = 20
+new_text   = HELLO WORLD
+
+
+
+
+// **************
+// PLAYER BARKLEY
+// **************
+
+type   = stats_change
+offset = 0x3E8EF
+speed  = 9
+3pts   = 9
+dunks  = 9
+pass   = 9
+power  = 9
+steal  = 9
+block  = 9
+cltch  = 9
+
+
+type = menu_image_change
+palette_offset = 0x8D7CC
+image_offset   = 0x3fc4dd
+width          = 76
+height         = 61
+bpp            = 8
+replace_with   = gfx/mike.png
+
+
+
+
+// **************
+// PLAYER MAJERLE
+// **************
+type   = stats_change
+offset = 0x3E8FF
+speed  = 7
+3pts   = 7
+dunks  = 7
+pass   = 7
+power  = 7
+steal  = 7
+block  = 7
+cltch  = 7
+
+
+
+// **************
+// PLAYER HARDAWAY
+// **************
+type   = stats_change
+offset = 0x3E65F
+speed  = 7
+3pts   = 7
+dunks  = 7
+pass   = 7
+power  = 7
+steal  = 7
+block  = 7
+cltch  = 7
+
+
+// **************
+// PLAYER MULLIN
+// **************
+type   = stats_change
+offset = 0x3E66F
+speed  = 7
+3pts   = 7
+dunks  = 7
+pass   = 7
+power  = 7
+steal  = 7
+block  = 7
+cltch  = 7
+
+
+
+// **************
+// PLAYER DREXLER
+// **************
+type   = stats_change
+offset = 0x3E91F
+speed  = 7
+3pts   = 7
+dunks  = 7
+pass   = 7
+power  = 7
+steal  = 7
+block  = 7
+cltch  = 7
+
+
+// **************
+// PLAYER PORTER
+// **************
+type   = stats_change
+offset = 0x3E92F
+speed  = 7
+3pts   = 7
+dunks  = 7
+pass   = 7
+power  = 7
+steal  = 7
+block  = 7
+cltch  = 7
+
+
+
