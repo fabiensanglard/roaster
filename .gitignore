@@ -4,4 +4,4 @@
 *.u*
 pkg
 **/.DS_Store
-.idea
+**/.idea/**/*
