@@ -1,0 +1,39 @@
+Phoenix Sun :
+=============
+
+Image: 0x00646d23
+"PaletteBank": 15,
+0x01800000
+wpset 0x01815000, 1, w
+
+ 01815000   0000  635F  435F  3F3F  371E  32FE  2ADE  26BD   ..c_C_??7.2þ*Þ&½
+ 01815080   229D  1A77  21F9  25D8  1112  10A8  0000  7FC0   "..w!ù%Ø...¨...À
+ 01815100   7FA0  7F80  7F40  7F20  7F00  7EC0  7EA0  7FFF   . ...@. ..~À~ .ÿ
+
+Search for:
+
+00005F635F433F3F
+
+offset = 67D2E
+
+ "Size": [
+            56,
+            60
+        ],
+        "BitsPerPixel": 8,
+
+
+
+LA Lakers :
+===========
+Image: 0x0064e152
+"PaletteBank": 36,
+
+wpset 0x01826000, 1, w
+wpset 0x01802600, 1, w
+
+
+
+7C1F  724F  760D  69ED  69CB
+
+1F7C4F720D76  69ED  69CB

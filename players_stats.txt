@@ -1,0 +1,91 @@
+3E4D7*    Atlanta      MANNING    <----- Probably 3E4CF
+3E4DF     Atlanta      AUGMON
+3E4EF     Atlanta      WILLIS
+3E4FF     Boston       BROWN
+3E50F     Boston       McDANIEL
+3E51F     Boston       GAMBLE
+3E52F     Charlotte    JOHNSON
+3E53F     Charlotte    HAWKINS
+3E54F     Charlotte    MOURNING
+3E567*    Chicago      PIPPEN         <----- Probably 3E55F
+3E56F     Chicago      ARMSTRONG
+3E57F     Chicago      KUKOC
+                                      <----- What is at 3E58F ?
+3E59F*    Cleveland    PRICE
+3E5AF     Cleveland    DAUGHERTY
+3E5BF     Cleveland    NANCE
+3E5CF     Dallas       JACKSON
+3E5DF     Dallas       MASHBURN
+3E5EF     Denver       MUTOMBO
+3E5FF     Denver       ELLIS
+3E60F     Denver       RODGERS
+3E61F     Detroit      THOMAS
+3E62F     Detroit      DUMARS
+3E63F     Houston      ELLIOT
+                                       <---- What is at 3E64F ?
+3E65F     Golden State HARDAWAY
+3E66F     Golden State MULLIN
+3E67F     Golden State WEBBER
+3E68F     Houston      OLAJUWON
+3E69F     Houston      MAXWELL
+3E6AF     Detroit      HORRY
+                                       <---- What is at 3E6BF ?
+3E6CF     Indiana      MILLER
+3E6DF     Indiana      SEALY
+3E6EF     Indiana      SMITS
+3E707*    LA Clippers  WILKINS  <---- Probably 3E6FF
+3E70F     LA Clippers  HARPER
+3E71F     LA Clippers  ROBERTS
+3E72F     LA Lakers    PEELER
+3E73F     LA Lakers    DIVAC
+3E74F     LA Lakers    CAMPBELL
+                                       <---- What is at 3E75F ?
+3E76F     Miami        RICE
+3E77F     Miami        SEIKALY
+3E78F     Miami        MINER
+3E79F     Milwaukee    BAKER
+3E7AF     Milwaukee    EDWARDS
+3E7BF     Milwaukee    DAY
+                                        <---- What is at 3E7CF ?
+3E7DF     Minnesota    LAETTNER
+3E7EF      Minnesota   PERSON
+3E7FF     Minnesota    RIDER
+3E80F     New Jersey   COLEMAN
+3E81F     New Jersey   ANDERSON
+3E82F     New Jersey   MORRIS
+                                        <---- What is at 3E83F ?
+3E84F     New York     EWING
+3E85F     New York     MASON
+3E86F     New York     STARKS
+                                        <---- What is at 3E87F ?
+                                        <---- What is at 3E88F ?
+3E89F     Orlando      HARDAWAY
+3E8AF     Orlando      ANDERSON
+3E8BF     Orlando      SKILES
+3E8CF     Philadelphia WEATHERSPN
+3E8DF     Philadelphia BRADLEY
+3E8EF     Phoenix      BARKLEY
+3E8FF     Phoenix      MAJERLE
+3E90F     Phoenix      JOHNSON
+3E91F     Portland     DREXLER
+3E92F     Portland     PORTER
+3E93F     Portland     ROBINSON
+                                        <---- What is at 3E94F ?
+3E95F     Sacramento   SIMMONS
+3E96F     Sacramento   HURLEY
+3E97F     Sacramento   RICHMOND
+                                        <---- What is at 3E98F ?
+                                        <---- What is at 3E99F ?
+3E9AF     San Antonio  ROBINSON
+3E9BF     San Antonio  RODMAN
+3E9CF     San Antonio  ELLIS
+3E9DF*    Seattle      KEMP
+3E9EF     Seattle      PAYTON
+3E9FF     Seattle      GILL
+3EA1F     Utah         MALONE
+3EA2F     Utah         STOCKTON
+3EA3F     Utah         BENOIT
+                                        <---- What is at 3E4F ?
+3EA5F     Washington   GUGLIOTTI
+3EA6F     Washington   ELLISON
+3EA7F     Washington   CHEANEY

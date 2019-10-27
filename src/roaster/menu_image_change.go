@@ -1,3 +1,19 @@
+/*
+Copyright 2019 Google LLC
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+https://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+*/
+
 package roaster
 
 import (
@@ -12,6 +28,7 @@ import (
 type MenuImageChange struct {
 	paletteOffset int
 	imageOffset int
+	bits_offset int
 	filename string
 	width int
 	height int
@@ -28,6 +45,11 @@ func (c *MenuImageChange) ParseParameters(pairs map[string]string) error {
 	}
 
 	c.imageOffset,err  = intFromString(pairs, "image_offset")
+	if err != nil {
+		return err
+	}
+
+	c.bits_offset,err  = intFromString(pairs, "bits_offset")
 	if err != nil {
 		return err
 	}
@@ -60,7 +82,7 @@ func (c *MenuImageChange) Run() error {
 	if err != nil {
 		return err
 	}
-	writeBytes(gfxrom.mergedROM, c.imageOffset, bytes)
+	writeBytes(gfxrom.mergedROM, c.imageOffset, c.bits_offset, bytes)
 	writePlayerPalette(mainRom.mergedROM, c.paletteOffset, palette)
 	return nil
 }

@@ -1,9 +1,26 @@
+/*
+Copyright 2019 Google LLC
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+https://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+*/
+
 package roaster
 
 import (
 	"fmt"
 	"io/ioutil"
 	"os"
+	"strings"
 )
 
 func check(e error) {
@@ -13,7 +30,7 @@ func check(e error) {
 }
 
 var BASE_SRC = "nbajamte/"
-var BASE_DST = "/Users/sanglardf/Downloads/mame/roms/nbajamte/"
+var BASE_DST = ""
 
 type EPROM struct {
 	name string
@@ -64,6 +81,14 @@ func initialize() {
 
 	mainRom.rom[0].name = "l4_nba_jam_tournament_game_rom_uj12.uj12"
 	mainRom.rom[1].name = "l4_nba_jam_tournament_game_rom_ug12.ug12"
+
+	if len(os.Args) < 1 {
+		panic("Usage: go run src/main/main.go OUTPUT_DIRECTORY");
+	}
+	BASE_DST =os.Args[1]
+	if !strings.HasSuffix(BASE_DST, "/") {
+		BASE_DST += "/"
+	}
 }
 
 func deinterlaceGFXROM() {
@@ -180,9 +205,32 @@ func writeUint16(bytes []byte, offset int, value uint16) {
 	bytes[offset+1] = uint8((value & 0x00FF) >> 0)
 }
 
-func writeBytes(dst []byte, offset int, src []byte) {
+func writeBytes(dst []byte, offset int, bitOffset int, src []byte) {
+
+	//if bitOffset != 0 {
+	//	for i := 0; i < len(src); i++ {
+	//		dst[offset+i] = 16 //src[i]
+	//	}
+	//	return
+	//}
+	//// Working for non bitOffset = 0
+	//for i := 0; i < len(src); i++ {
+	//	dst[offset + i] = src[i]
+	//}
+
+	var shift = uint(8 - bitOffset)
+	var mask = uint16(0xFF) << shift
+
 	for i := 0; i < len(src); i++ {
-		dst[offset+i] = src[i]
+		var p_src uint16
+		p_src = uint16(src[i])
+		p_src = p_src << shift
+
+		p_dst := uint16(uint16(dst[offset + i] + 0) << 8 ) | (uint16(dst[offset + i + 1]) )
+		p_dst = (p_dst & ^mask) | (p_src & mask)
+
+		dst[offset + i + 0] = uint8(p_dst >> 8)
+		dst[offset + i + 1] = uint8(p_dst)
 	}
 }
 

@@ -10,7 +10,6 @@ new_text   = HELLO WORLD
 // **************
 // PLAYER BARKLEY
 // **************
-
 type   = stats_change
 offset = 0x3E8EF
 speed  = 9
@@ -26,6 +25,7 @@ cltch  = 9
 type = menu_image_change
 palette_offset = 0x8D7CC
 image_offset   = 0x3fc4dd
+bits_offset    = 0
 width          = 76
 height         = 61
 bpp            = 8
@@ -37,17 +37,26 @@ replace_with   = gfx/mike.png
 // **************
 // PLAYER MAJERLE
 // **************
-type   = stats_change
-offset = 0x3E8FF
-speed  = 7
-3pts   = 7
-dunks  = 7
-pass   = 7
-power  = 7
-steal  = 7
-block  = 7
-cltch  = 7
+//type   = stats_change
+//offset = 0x3E8FF
+//speed  = 7
+//3pts   = 7
+//dunks  = 7
+//pass   = 7
+//power  = 7
+//steal  = 7
+//block  = 7
+//cltch  = 7
 
+
+//type = menu_image_change
+//palette_offset = 0x8F926
+//image_offset   = 0x0040ddd8
+//bits_offset    = 0
+//width          = 71
+//height         = 60
+//bpp            = 8
+//replace_with   = gfx/shaq.png
 
 
 // **************
@@ -84,31 +93,41 @@ cltch  = 7
 // **************
 // PLAYER DREXLER
 // **************
-type   = stats_change
-offset = 0x3E91F
-speed  = 7
-3pts   = 7
-dunks  = 7
-pass   = 7
-power  = 7
-steal  = 7
-block  = 7
-cltch  = 7
+//type   = stats_change
+//offset = 0x3E91F
+//speed  = 7
+//3pts   = 7
+//dunks  = 7
+//pass   = 7
+//power  = 7
+//steal  = 7
+//block  = 7
+//cltch  = 7
 
 
 // **************
 // PLAYER PORTER
 // **************
-type   = stats_change
-offset = 0x3E92F
-speed  = 7
-3pts   = 7
-dunks  = 7
-pass   = 7
-power  = 7
-steal  = 7
-block  = 7
-cltch  = 7
+//type   = stats_change
+//offset = 0x3E92F
+//speed  = 7
+//3pts   = 7
+//dunks  = 7
+//pass   = 7
+//power  = 7
+//steal  = 7
+//block  = 7
+//cltch  = 7
 
 
+// palette_offset = 0x5F6C2
+// Phoenix Sun logo
+//type = menu_image_change
+//palette_offset = 0x5F6C2
+//image_offset   = 0x00646d23
+// bits_offset    = 5
+// width          = 56
+// height         = 60
+// bpp            = 8
+// replace_with   = gfx/raptors.png
 
