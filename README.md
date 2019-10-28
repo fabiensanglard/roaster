@@ -4,8 +4,8 @@ This is the source code of Roaster, a tool to edit the EPROMs of NBA Jam Tournam
 
 Usage
 =====
-1/ Extract the EPROMs content from your NBA Jam Tournament Edition rev 4.0 board. Place them in the nbajamte directory.
-2/ When naming the ROMs, the names must be EXACTLY as follow. Use the NBA Jam kit documentation that came with the board to identify EPROMs:
+1. Extract the EPROMs content from your NBA Jam Tournament Edition rev 4.0 board. Place them in the nbajamte directory.
+2. When naming the ROMs, the names must be EXACTLY as follow. Use the NBA Jam kit documentation that came with the board to identify EPROMs:
 
 * l1_nba_jam_tournament_game_rom_ug14.ug14
 * l1_nba_jam_tournament_game_rom_ug16.ug16
@@ -29,13 +29,13 @@ Usage
 * l4_nba_jam_tournament_game_rom_ug12.ug12
 * l4_nba_jam_tournament_game_rom_uj12.uj12
 
-3/ Adjust the patching instructions in feed.txt. This is where you can set the name of the player, player photo. The photos must be PNG 256 indexed color format. Additionaly, each player slot as a specific width/height so make sure to respect that.
-4/ Run: go run src/main/main.go 
-5/ You should see the following output:
+3. Adjust the patching instructions in feed.txt. This is where you can set the name of the player, player photo. The photos must be PNG 256 indexed color format. Additionaly, each player slot as a specific width/height so make sure to respect that.
+4. Run: go run src/main/main.go 
+5. You should see the following output:
 Deinterlacing gfxrom
 Deinterlacing mainrom   
-6/ Burn back the EPROMs found in the output directory.
-7/ Enjoy!
+6. Burn back the EPROMs found in the output directory.
+7. Enjoy!
 
 Disclaimer
 ==========
